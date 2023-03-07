@@ -6,7 +6,7 @@ let index = 0;
 let arr = ["img1.jpg", "img2.jpg", "img3.jpg"];
 
 next.addEventListener("click", () => {
-  img.setAttribute("src", `./${arr[index]}`);
+  img.setAttribute("src", `./images/${arr[index]}`);
 
   if (index == arr.length - 1) {
     index = 0;
@@ -16,7 +16,7 @@ next.addEventListener("click", () => {
 });
 
 prew.addEventListener("click",()=>{
-    img.setAttribute("src",`./${arr[index]}`)
+    img.setAttribute("src",`./images/${arr[index]}`)
 
     if(index==0){
         index=arr.length-1;
